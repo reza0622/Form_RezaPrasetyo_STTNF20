@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrasi Mahasiswa</title>
+</head>
+<body>
+    <h1>REGISTRASI MAHASISWA</h1>
+    <form action="proses.php" method="POST">
+        <fieldset style="background-color: aqua;">
+        <b>Data Diri Mahasiswa</b>
+
+        <p>Nama Lengkap : 
+            <input type="text" name="nama" placeholder="Reza Prasetyo" required>
+        </p>
+        <p>Nama Panggilan :
+            <input type="text" name="panggilan" placeholder="Reza" required>
+        </p>
+        <p>Tempat Lahir :
+            <input type="text" name="tempatlahir" placeholder="Jakarta" required>
+        </p>
+        <p>Tanggal Lahir : 
+            <input type="date" name="tgllahir">
+        </p>
+        <p>Jenis Kelamin :
+            <input type="radio" name="jk" value="L">Laki-Laki
+            <input type="radio" name="jk" value="P">Perempuan
+        </p>
+        <p>Usia :
+            <input type="number" name="Usia" placeholder="18 Tahun" min="17" max="24">
+        </p>
+        <p>Berat/Tinggi Badan :
+            <input type="number" name="BB" placeholder="53 Kg"> <input type="number" name="TB" placeholder="165 cm">
+        </p>
+        <p>Alamat :
+            <textarea type="text" name="alamat" rows="5" cols="50"></textarea>
+        </p>
+        <p>Nomor Telepon :
+            <input type="number" name="telepon" placeholder="0812345xxx" required>
+        </p>
+        <p>Alamat Email :
+            <input type="email" name="email.com" placeholder="user@example,com" required>
+        </p>
+        <P>Password : 
+            <input id="password" type="password" name="password" value=""
+            autocomplete="off" placeholder="8-10 characters" pattern="^(?=.8)(?=.*[a-z])(?=.*[A-Z])(?=.*[/d])(?=.*[\w]).*$"
+            title="password must be 8 or more charakter with at least one number, an uppercase letter, and one special charakter" >
+        </P>
+        <P>Password Comfirmation : 
+            <input id="password" type="password" name="password" value=""
+            autocomplete="off" placeholder="8-10 characters" pattern="^(?=.8)(?=.*[a-z])(?=.*[A-Z])(?=.*[/d])(?=.*[\w]).*$"
+            title="password must be 8 or more charakter with at least one number, an uppercase letter, and one special charakter" >
+        </P>
+        <p>Upload foto : 
+            <input type="file" name="photo">
+        </p>
+
+        <b>Data Orang Tua/Wali</b>
+
+        <P>Nama Ayah :
+            <input type="text" name="ayah" required>
+        </P>
+        <p>Usia :
+            <input type="number" name="Usia">
+        </p>
+        <p>Pekerjaan :
+            <input type="text" name="pekerjaan">
+        </p>
+
+        <P>Nama Ibu :
+            <input type="text" name="ibu" required>
+        </P>
+        <p>Usia :
+            <input type="number" name="Usia">
+        </p>
+        <p>Pekerjaan :
+            <input type="text" name="pekerjaan">
+        </p>
+
+        <b>Program Studi</b>
+        
+        <p>Pilih Prodi : <br>
+            <input type="radio" name="Prodi" value="SI">Sistem Informasi<br>
+            <input type="radio" name="Prodi" value="TI">Tehnik Informatika<br>
+        </p>
+        <p>Pilih Kelas : <br>
+            <input type="radio" name="Kelas" value="Reguler Pagi">Reguler pagi<br>
+            <input type="radio" name="Kelas" value="weekend">weekend<br>
+        </p>
+       
+
+        <input type="submit" value="Kirim">
+        <input type="reset" value="batal">
+
+    </fieldset>
+
+    </form>
+</body>
+</html>
